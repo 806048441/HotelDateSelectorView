@@ -44,8 +44,13 @@
                     year++;
                 }
                 NSMutableArray *monthDays =[[NSMutableArray alloc]init];
-                NSDate *monthDate =beinDate;
-                for (NSInteger j=0; j<monthDate.numberOfDaysInMonth; j++) {
+                NSString *monthDateString = [NSString stringWithFormat:@"%.4ld-%.2ld-01",monthModel.year,monthModel.month];
+                NSDate *monthDate =monthDateString.date;
+                NSInteger start = 0;
+                if (beinDate.year==monthModel.year && beinDate.month==monthModel.month) {
+                    start =beinDate.day-1;
+                }
+                for (NSInteger j=start; j<monthDate.numberOfDaysInMonth; j++) {
                     DayModel *dayModel = [[DayModel alloc]init];
                     NSString *dayDateString = [NSString stringWithFormat:@"%.4ld-%.2ld-%.2ld",monthModel.year,monthModel.month,j+1];
                     dayModel.date = dayDateString.date;

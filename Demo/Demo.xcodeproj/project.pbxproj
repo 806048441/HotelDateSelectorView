@@ -20,6 +20,7 @@
 		FDA8BA4A2178249D00134301 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA8BA442178249C00134301 /* NSString+Date.m */; };
 		FDA8BA4B2178249D00134301 /* MonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA8BA452178249C00134301 /* MonthModel.m */; };
 		FDA8BA4C2178249D00134301 /* PlaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA8BA462178249C00134301 /* PlaceCell.m */; };
+		FDA8BA502178729900134301 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA8BA4F2178729900134301 /* DateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		FDA8BA442178249C00134301 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
 		FDA8BA452178249C00134301 /* MonthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthModel.m; sourceTree = "<group>"; };
 		FDA8BA462178249C00134301 /* PlaceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceCell.m; sourceTree = "<group>"; };
+		FDA8BA4E2178729900134301 /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		FDA8BA4F2178729900134301 /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				FDA8BA23217822F200134301 /* AppDelegate.m */,
 				FDA8BA25217822F200134301 /* ViewController.h */,
 				FDA8BA26217822F200134301 /* ViewController.m */,
+				FDA8BA4E2178729900134301 /* DateViewController.h */,
+				FDA8BA4F2178729900134301 /* DateViewController.m */,
 				FDA8BA4D21786AB100134301 /* HotelDateSelectorView */,
 				FDA8BA28217822F200134301 /* Main.storyboard */,
 				FDA8BA2B217822F400134301 /* Assets.xcassets */,
@@ -186,6 +191,7 @@
 			files = (
 				FDA8BA472178249D00134301 /* NSDate+Oxygen.m in Sources */,
 				FDA8BA4C2178249D00134301 /* PlaceCell.m in Sources */,
+				FDA8BA502178729900134301 /* DateViewController.m in Sources */,
 				FDA8BA482178249D00134301 /* DayHeadView.m in Sources */,
 				FDA8BA3A2178231900134301 /* HotelDateSelectorView.m in Sources */,
 				FDA8BA4A2178249D00134301 /* NSString+Date.m in Sources */,
