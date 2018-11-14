@@ -80,7 +80,11 @@
 /**
  keng * 日期转时间戳
  */
-- (NSInteger)timeSp;
+/**
+ keng * 日期转时间戳
+ */
+- (NSInteger)timestamp;
+- (BOOL)isToday;
 - (NSString*)lunarYearString;
 - (NSString*)lunarMonthString;
 - (NSString*)lunarDayString;

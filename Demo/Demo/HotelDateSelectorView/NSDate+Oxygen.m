@@ -196,9 +196,13 @@
 	return days;
 }
 
-- (NSInteger)timeSp{
+- (NSInteger)timestamp{
     
     return (long)[self timeIntervalSince1970];
+}
+- (BOOL)isToday {
+    if (fabs(self.timeIntervalSinceNow) >= 60 * 60 * 24) return NO;
+    return [NSDate new].day == self.day;
 }
 - (NSString*)lunarYearString{
     NSCalendar *chineseCalendar =[[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierChinese];

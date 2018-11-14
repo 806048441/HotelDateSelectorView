@@ -11,28 +11,30 @@
 - (void)setDate:(NSDate *)date{
     
     _date = [date dateStringWithFormat:@"yyyy-MM-dd"].date;
-
+    
 }
 - (BOOL)ago{
     NSString *todayString = [[NSDate date] dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger todayTimeSp = todayString.date.timeSp;
+    NSInteger todayTimeSp = todayString.date.timestamp;
     NSString *selfString =[self.date dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger selfTimeSp = selfString.date.timeSp;
+    NSInteger selfTimeSp = selfString.date.timestamp;
     return selfTimeSp<todayTimeSp;
 }
 - (BOOL)today{
-    NSString *todayString = [[NSDate date] dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger todayTimeSp = todayString.date.timeSp;
-    NSString *selfString =[self.date dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger selfTimeSp = selfString.date.timeSp;
-    return todayTimeSp=selfTimeSp;
+    //    NSString *todayString = [[NSDate date] dateStringWithFormat:@"yyyy-MM-dd"];
+    //    NSInteger todayTimeSp = todayString.date.timestamp;
+    //    NSString *selfString =[self.date dateStringWithFormat:@"yyyy-MM-dd"];
+    //    NSInteger selfTimeSp = selfString.date.timestamp;
+    
+    return self.date.isToday;
 }
 - (BOOL)tomorrow{
-    NSString *tomorrowString = [[NSDate date] dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger tomorrowTimeSp = tomorrowString.date.timeSp;
-    NSString *selfString =[self.date dateStringWithFormat:@"yyyy-MM-dd"];
-    NSInteger selfTimeSp = selfString.date.timeSp;
-    return tomorrowTimeSp=selfTimeSp;
+    //    NSString *tomorrowString = [[NSDate date] dateStringWithFormat:@"yyyy-MM-dd"];
+    //    NSInteger tomorrowTimeSp = tomorrowString.date.timestamp;
+    //    NSString *selfString =[self.date dateStringWithFormat:@"yyyy-MM-dd"];
+    //    NSInteger selfTimeSp = selfString.date.timestamp;
+    NSDate *creatDate = [self.date dateByAddingDays:-1];
+    return [creatDate isToday];
 }
 @end
 
