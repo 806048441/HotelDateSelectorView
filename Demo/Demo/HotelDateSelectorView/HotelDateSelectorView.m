@@ -108,9 +108,6 @@
     
 }
 #pragma mark - Custom Accessors
-- (void)setCustomProperty:(id)value {
-    
-}
 - (void)setBeginModel:(DayModel *)beginModel{
     
     _beginModel=beginModel;
@@ -140,11 +137,9 @@
     }];
 
 }
-- (id)customProperty {
-    
-    return [NSObject  new];
-}
+
 - (NSMutableArray*)dateSource{
+    
     if (!_dateSource) {
         _dateSource =[[NSMutableArray alloc]init];
         NSDate *nowDate =[NSDate date];
@@ -179,17 +174,10 @@
 }
 
 #pragma mark - IBAction
-- (IBAction)submitData:(id)sender {
-    
-}
+
 #pragma mark - Public
-- (void)publicMethod {
-    
-}
+
 #pragma mark - Private
-- (void)privateMethod {
-    
-}
 - (void)insertSubviews{
     
     CGFloat view_width = self.bounds.size.width;
@@ -226,9 +214,6 @@
     [self addSubview:_hotelDatePicker];
 }
 #pragma mark - Protocol conformance
-#pragma mark - UITextFieldDelegate
-#pragma mark - UITableViewDataSource
-#pragma mark - UITableViewDelegate
 #pragma mark - UICollectionViewDelegate
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     MonthModel *month =self.dateSource[indexPath.section];
@@ -401,23 +386,4 @@
         self.daySelectBlock(selectBeginDayModel, selectEndDayModel);
     }
 }
-
-#pragma mark - NSCopying
-- (id)copyWithZone:(NSZone *)zone {
-    
-    return [NSObject new];
-}
-#pragma mark - NSObject
-- (NSString *)description {
-    
-    return [NSString new];
-}
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 @end

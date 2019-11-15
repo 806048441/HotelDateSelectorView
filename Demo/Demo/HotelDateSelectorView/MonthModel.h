@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, DayOfState) {
 @interface DayModel : NSObject
 
 @property (assign,nonatomic)DayOfState dayState;
+
 //不可选的 停售 余量不足 什么的  能做尾部 不能做头部 不能做中间
 @property (assign,nonatomic)BOOL notOptional;
 

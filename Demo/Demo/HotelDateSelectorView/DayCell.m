@@ -28,9 +28,7 @@
     [self.contentView addSubview:_lb];
 }
 #pragma mark - Custom Accessors
-- (void)setCustomProperty:(id)value {
-    
-}
+
 - (void)setDayModel:(DayModel *)dayModel{
     _dayModel =dayModel;
     _lb.text =@(dayModel.date.day).stringValue;
@@ -55,36 +53,5 @@
         self.contentView.backgroundColor =[[UIColor grayColor] colorWithAlphaComponent:0.3];
     }
 }
-- (id)customProperty {
-    
-    return [NSObject  new];
-}
-#pragma mark - IBAction
-- (IBAction)submitData:(id)sender {
-    
-}
-#pragma mark - Public
-- (void)publicMethod {
-    
-}
-#pragma mark - Private
-- (void)privateMethod {
-    
-}
-#pragma mark - Protocol conformance
-#pragma mark - UITextFieldDelegate
-#pragma mark - UITableViewDataSource
-#pragma mark - UITableViewDelegate
-#pragma mark - UICollectionViewDelegate
 
-#pragma mark - NSCopying
-- (id)copyWithZone:(NSZone *)zone {
-    
-    return [NSObject new];
-}
-#pragma mark - NSObject
-- (NSString *)description {
-    
-    return [NSString new];
-}
 @end
